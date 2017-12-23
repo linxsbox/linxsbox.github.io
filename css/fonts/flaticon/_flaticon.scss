@@ -1,0 +1,169 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 31/07/2017 21:17
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-speech-bubbles-comment-option:before { content: "\f100"; }
+.flaticon-user-shape:before { content: "\f101"; }
+.flaticon-magnifying-glass:before { content: "\f102"; }
+.flaticon-map-marker:before { content: "\f103"; }
+.flaticon-home:before { content: "\f104"; }
+.flaticon-earth-globe:before { content: "\f105"; }
+.flaticon-calendar-with-spring-binder-and-date-blocks:before { content: "\f106"; }
+.flaticon-black:before { content: "\f107"; }
+.flaticon-black-1:before { content: "\f108"; }
+.flaticon-envelope:before { content: "\f109"; }
+.flaticon-photo-camera:before { content: "\f10a"; }
+.flaticon-list-with-dots:before { content: "\f10b"; }
+.flaticon-check:before { content: "\f10c"; }
+.flaticon-link:before { content: "\f10d"; }
+.flaticon-small-rocket-ship-silhouette:before { content: "\f10e"; }
+.flaticon-circle-6:before { content: "\f10f"; }
+.flaticon-circle-1:before { content: "\f110"; }
+.flaticon-checked-symbol:before { content: "\f111"; }
+.flaticon-circle-2:before { content: "\f112"; }
+.flaticon-circle-3:before { content: "\f113"; }
+.flaticon-play-circle:before { content: "\f114"; }
+.flaticon-play-sign:before { content: "\f115"; }
+.flaticon-circle-4:before { content: "\f116"; }
+.flaticon-close:before { content: "\f117"; }
+.flaticon-signs:before { content: "\f118"; }
+.flaticon-circle:before { content: "\f119"; }
+.flaticon-letter:before { content: "\f11a"; }
+.flaticon-circle-5:before { content: "\f11b"; }
+.flaticon-clock:before { content: "\f11c"; }
+.flaticon-power-button-off:before { content: "\f11d"; }
+.flaticon-cog-wheel-silhouette:before { content: "\f11e"; }
+.flaticon-arrows:before { content: "\f11f"; }
+.flaticon-arrows-1:before { content: "\f120"; }
+.flaticon-arrows-2:before { content: "\f121"; }
+.flaticon-right-chevron:before { content: "\f122"; }
+.flaticon-arrows-3:before { content: "\f123"; }
+.flaticon-correct-symbol:before { content: "\f124"; }
+.flaticon-rotate:before { content: "\f125"; }
+.flaticon-mobile:before { content: "\f126"; }
+.flaticon-desktop-monitor:before { content: "\f127"; }
+.flaticon-fruit:before { content: "\f128"; }
+.flaticon-technology:before { content: "\f129"; }
+.flaticon-windows:before { content: "\f12a"; }
+.flaticon-heart-shape-outline:before { content: "\f12b"; }
+.flaticon-shapes:before { content: "\f12c"; }
+.flaticon-star:before { content: "\f12d"; }
+.flaticon-shape:before { content: "\f12e"; }
+.flaticon-shape-2:before { content: "\f12f"; }
+.flaticon-shape-1:before { content: "\f130"; }
+.flaticon-thumbs-up:before { content: "\f131"; }
+.flaticon-thumbs-up-hand-symbol:before { content: "\f132"; }
+.flaticon-interface:before { content: "\f133"; }
+.flaticon-internet:before { content: "\f134"; }
+.flaticon-logo:before { content: "\f135"; }
+.flaticon-stack:before { content: "\f136"; }
+.flaticon-github:before { content: "\f137"; }
+.flaticon-github-logo:before { content: "\f138"; }
+.flaticon-social:before { content: "\f139"; }
+.flaticon-circle-7:before { content: "\f13a"; }
+.flaticon-weibo-website-logo:before { content: "\f13b"; }
+.flaticon-facebook-logo:before { content: "\f13c"; }
+.flaticon-vk-social-network-logo:before { content: "\f13d"; }
+.flaticon-twitter-black-shape:before { content: "\f13e"; }
+.flaticon-program:before { content: "\f13f"; }
+.flaticon-youtube-logo:before { content: "\f140"; }
+    
+    $font-Flaticon-speech-bubbles-comment-option: "\f100";
+    $font-Flaticon-user-shape: "\f101";
+    $font-Flaticon-magnifying-glass: "\f102";
+    $font-Flaticon-map-marker: "\f103";
+    $font-Flaticon-home: "\f104";
+    $font-Flaticon-earth-globe: "\f105";
+    $font-Flaticon-calendar-with-spring-binder-and-date-blocks: "\f106";
+    $font-Flaticon-black: "\f107";
+    $font-Flaticon-black-1: "\f108";
+    $font-Flaticon-envelope: "\f109";
+    $font-Flaticon-photo-camera: "\f10a";
+    $font-Flaticon-list-with-dots: "\f10b";
+    $font-Flaticon-check: "\f10c";
+    $font-Flaticon-link: "\f10d";
+    $font-Flaticon-small-rocket-ship-silhouette: "\f10e";
+    $font-Flaticon-circle-6: "\f10f";
+    $font-Flaticon-circle-1: "\f110";
+    $font-Flaticon-checked-symbol: "\f111";
+    $font-Flaticon-circle-2: "\f112";
+    $font-Flaticon-circle-3: "\f113";
+    $font-Flaticon-play-circle: "\f114";
+    $font-Flaticon-play-sign: "\f115";
+    $font-Flaticon-circle-4: "\f116";
+    $font-Flaticon-close: "\f117";
+    $font-Flaticon-signs: "\f118";
+    $font-Flaticon-circle: "\f119";
+    $font-Flaticon-letter: "\f11a";
+    $font-Flaticon-circle-5: "\f11b";
+    $font-Flaticon-clock: "\f11c";
+    $font-Flaticon-power-button-off: "\f11d";
+    $font-Flaticon-cog-wheel-silhouette: "\f11e";
+    $font-Flaticon-arrows: "\f11f";
+    $font-Flaticon-arrows-1: "\f120";
+    $font-Flaticon-arrows-2: "\f121";
+    $font-Flaticon-right-chevron: "\f122";
+    $font-Flaticon-arrows-3: "\f123";
+    $font-Flaticon-correct-symbol: "\f124";
+    $font-Flaticon-rotate: "\f125";
+    $font-Flaticon-mobile: "\f126";
+    $font-Flaticon-desktop-monitor: "\f127";
+    $font-Flaticon-fruit: "\f128";
+    $font-Flaticon-technology: "\f129";
+    $font-Flaticon-windows: "\f12a";
+    $font-Flaticon-heart-shape-outline: "\f12b";
+    $font-Flaticon-shapes: "\f12c";
+    $font-Flaticon-star: "\f12d";
+    $font-Flaticon-shape: "\f12e";
+    $font-Flaticon-shape-2: "\f12f";
+    $font-Flaticon-shape-1: "\f130";
+    $font-Flaticon-thumbs-up: "\f131";
+    $font-Flaticon-thumbs-up-hand-symbol: "\f132";
+    $font-Flaticon-interface: "\f133";
+    $font-Flaticon-internet: "\f134";
+    $font-Flaticon-logo: "\f135";
+    $font-Flaticon-stack: "\f136";
+    $font-Flaticon-github: "\f137";
+    $font-Flaticon-github-logo: "\f138";
+    $font-Flaticon-social: "\f139";
+    $font-Flaticon-circle-7: "\f13a";
+    $font-Flaticon-weibo-website-logo: "\f13b";
+    $font-Flaticon-facebook-logo: "\f13c";
+    $font-Flaticon-vk-social-network-logo: "\f13d";
+    $font-Flaticon-twitter-black-shape: "\f13e";
+    $font-Flaticon-program: "\f13f";
+    $font-Flaticon-youtube-logo: "\f140";

@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html data-dpr="1">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="email=no">
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+  <title>CatUI - 林小帅</title>
+  <link rel="stylesheet" href="http://eyufax.com/static/css/catui.min.css?094a27754b2ff6e97ddea5fd470b61c7">
+  <link rel="stylesheet" href="http://eyufax.com/static/css/catui.docs.min.css?5878e5abe728c0f5da9dd9b96254b6e5">
+  <!-- <link rel="stylesheet" href="http://eyufax.com/static/css/catui.shade.min.css"> -->
+  <link rel="stylesheet" href="http://eyufax.com/static/css/fonts/font.min.css">
+  <style media="screen">[data-dpr="1"] body{font-size:14px}@media (min-width:1200px){.main{width:1170px}}.nav-eff{padding:20px 0;background-color:#435a6b}.nav-eff li a{position:relative;display:block;min-width:94px;padding:10px 20px;margin:8px 12px;color:#fff}.nav-eff li a:hover{text-decoration:none}.nav-eff li a::after,.nav-eff li a::before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;border:2px solid transparent;-webkit-transition:-webkit-transform .3s,opacity .3s;-moz-transition:-moz-transform .3s,opacity .3s;transition:transform .3s,opacity .3s}.nav-eff li a::before{border-color:#354856}.nav-eff li a:hover::before{opacity:0;-webkit-transform:translateY(5px) translateX(-5px);-moz-transform:translateY(5px) translateX(-5px);transform:translateY(5px) translateX(-5px)}.nav-eff li a::after{border-color:#fff;opacity:0;-webkit-transform:translateY(-7px) translateX(6px);-moz-transform:translateY(-7px) translateX(6px);transform:translateY(-7px) translateX(6px)}.nav-eff li a:hover::after{opacity:1;-webkit-transform:translateY(0) translateX(0);-moz-transform:translateY(0) translateX(0);transform:translateY(0) translateX(0)}.sidebar{position:fixed;font-size:.16rem}.nav ul{padding-left:.12rem;list-style:none}.bottm-line{padding-bottom:.08rem;border-bottom:1px solid #ccc}.margin-left-l40{margin-left:40px}.exp_gtitle{margin-bottom:0}.tbox{display:inline-block;width:40px;height:40px;border:1px solid #000}.tpr{position:relative}.thx-list>li{margin-left:20px}.thx-list>li:first-child{margin-left:0}</style>
+</head>
+
+<body>
+  <header class="headerbar">
+    <nav class="nav-eff">
+      <ul class="list-inline font24 text-center">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="#/im">IM</a></li>
+        <li><a href="#/message">Message</a></li>
+        <li><a href="/koocat/ui">KooCat</a></li>
+        <li><a href="#/Other">Other</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- main start -->
+  <section class="container main">
+    <h1>This is Cat UI. @Lin.xs</h1>
+    <!-- grid start -->
+    <div class="grid-row">
+      <!-- content grid strat -->
+
+      <!-- nav, grid left start -->
+      <div class="grid-col-2">
+        <nav class="sidebar">
+          <ul class="nav">
+            <li><a href="#grid">栅格化 Grid</a></li>
+            <li><a href="#table">表格 Table</a></li>
+            <li><a href="#form">表单 Form</a></li>
+            <li><a href="#typeset">排版</a>
+              <ul class="unstyle">
+                <li><a href="#title">标题</a></li>
+                <li><a href="#blockquote">引用</a></li>
+                <li><a href="#list">列表</a></li>
+                <li><a href="#text">文本</a></li>
+              </ul>
+            </li>
+            <li><a href="#button">按钮 Button</a></li>
+            <li><a href="#input">输入框 Input</a></li>
+            <li><a href="#assist">辅助类 Assist</a>
+              <ul class="unstyle">
+                <li><a href="#disabled">禁用/激活</a></li>
+                <li><a href="#badge">徽章</a></li>
+              </ul>
+            </li>
+            <li><a href="#last">写在最后</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- nav, grid left end -->
+
+      <!-- nav, grid right start -->
+      <div class="grid-col-10">
+
+        <!-- grid system start -->
+        <article id="grid" class="doc-section">
+          <h2 class="bottm-line">栅格化系统 Grid</h2>
+          <div class="doc-preface">
+            <p>
+              “网格系统” 这概念我是从 <strong><a href="https://960.gs/">960GRID</a></strong> 这里知道的，但是当时并不太能理解。 在后来，正式从事了前端这个职业之后才开始慢慢的开始有了解。
+            </p>
+            <p>
+              2014年 “网页栅格化” 这个布局设计模式在前端也开始变得火热。也开始慢慢的接触了一些前端大牛，不断的去向他们学习。感谢！
+            </p>
+            <div class="grid-row doc-refer">
+              <div class="grid-col-1"> 参考：</div>
+              <div class="grid-col-11">
+                <p>
+                  <span>960GRID：</span>
+                  <a href="https://960.gs/">960 Grid System</a>，
+                  <span>腾讯ISUX：</span>
+                  <a href="http://isux.tencent.com/20984.html">你的布局设定方法靠谱吗？</a>
+                </p>
+                <p>
+                  <span>Boostrap v3:</span>
+                  <a href="http://v3.bootcss.com/css/?#grid">栅格系统</a>，
+                  <span>Google：</span>
+                  <a href="javascript:;">栅格化的研究（找不到了，Sorry）</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- conent start -->
+          <div class="conent grid-line">
+            <div class="grid-row mag20-tb">
+              <div class="grid-col-1">grid-col-1</div>
+              <div class="grid-col-1">grid-col-1</div>
+              <div class="grid-col-1">grid-col-1</div>
+              <div class="grid-col-1">grid-col-1</div>
+              <div class="grid-col-1">grid-col-1</div>
+              <div class="grid-col-1">grid-col-1</div>
+              <div class="grid-col-1">grid-col-1</div>
+              <div class="grid-col-1">grid-col-1</div>
+              <div class="grid-col-1">grid-col-1</div>
+              <div class="grid-col-1">grid-col-1</div>
+              <div class="grid-col-1">grid-col-1</div>
+              <div class="grid-col-1">grid-col-1</div>
+            </div>
+            <div class="grid-row mag20-tb">
+              <div class="grid-col-1">col-1</div>
+              <div class="grid-col-11">grid-col-11</div>
+            </div>
+            <div class="grid-row mag20-tb">
+              <div class="grid-col-2">grid-col-2</div>
+              <div class="grid-col-10">grid-col-10</div>
+            </div>
+            <div class="grid-row mag20-tb">
+              <div class="grid-col-3">grid-col-3</div>
+              <div class="grid-col-9">grid-col-9</div>
+            </div>
+            <div class="grid-row mag20-tb">
+              <div class="grid-col-4">grid-col-4</div>
+              <div class="grid-col-8">grid-col-8</div>
+            </div>
+            <div class="grid-row mag20-tb">
+              <div class="grid-col-5">grid-col-5</div>
+              <div class="grid-col-7">grid-col-7</div>
+            </div>
+            <div class="grid-row mag20-tb">
+              <div class="grid-col-6">grid-col-6</div>
+              <div class="grid-col-6">grid-col-6</div>
+            </div>
+            <div class="grid-row mag20-tb">
+              <div class="grid-col-12">grid-col-12</div>
+            </div>
+            <div class="grid-row mag20-tb">
+              <div class="grid-col-2">grid-col-2</div>
+              <div class="grid-col-7">grid-col-7</div>
+              <div class="grid-col-3">grid-col-3</div>
+            </div>
+            <div class="grid-row mag20-tb">
+              <div class="grid-col-1">col-1</div>
+              <div class="grid-col-2">grid-col-2</div>
+              <div class="grid-col-3">grid-col-3</div>
+              <div class="grid-col-6">grid-col-6</div>
+            </div>
+          </div>
+          <!-- conent end -->
+        </article>
+        <!-- grid system end -->
+
+        <!-- table system start -->
+        <article id="table" class="doc-section">
+          <h2 class="bottm-line">表格 Table</h2>
+          <div class="doc-preface">
+            <p> 为&lt;table&gt;添加.table类元素可以添加基本的表格样式，而不是直接覆盖table。因为表格元素使用的很广泛，所以我选择将此样式独立出来。</p>
+          </div>
+          <!-- conent start -->
+          <div class="conent">
+            <div class="doc-example" data-title="实例：">
+              <table class="table">
+                <caption>This is Table default style</caption>
+                <thead class="thead">
+                  <tr>
+                    <th>column1</th>
+                    <th>column2</th>
+                    <th>column3</th>
+                    <th>column4</th>
+                  </tr>
+                </thead>
+                <tfoot class="tfoot">
+                  <tr>
+                    <td colspan="2">Table foot</td>
+                    <td colspan="2">Table foot</td>
+                  </tr>
+                </tfoot>
+                <tbody>
+                  <tr>
+                    <td>Row1</td>
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                  </tr>
+                  <tr>
+                    <td>Row2</td>
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                  </tr>
+                  <tr>
+                    <td>Row3</td>
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="foot">
+                <pre><code>&lt;table class=&quot;table&quot;&gt;
+  ......
+&lt;/table&gt;</code></pre>
+              </div>
+            </div>
+            <div class="doc-preface">
+              <p>
+                使用.table-striped类样式可以为表格每一行都增加加斑马纹， 使用.table-border类样式可以为每个单元格增加边框， 使用.table-hover类样式可以为每一行增加悬停状态做出响应。
+              </p>
+            </div>
+            <div class="doc-example" data-title="实例：">
+              <table class="table table-border table-striped table-hover">
+                <caption>This is Table, use class ".table-border .table-striped .table-hover"</caption>
+                <thead class="thead">
+                  <tr>
+                    <th>column1</th>
+                    <th>column2</th>
+                    <th>column3</th>
+                    <th>column4</th>
+                  </tr>
+                </thead>
+                <tfoot class="tfoot">
+                  <tr>
+                    <td colspan="2">Table foot</td>
+                    <td colspan="2">Table foot</td>
+                  </tr>
+                </tfoot>
+                <tbody>
+                  <tr>
+                    <td>Row1</td>
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                  </tr>
+                  <tr>
+                    <td>Row2</td>
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                  </tr>
+                  <tr>
+                    <td>Row3</td>
+                    <td>item1</td>
+                    <td>item2</td>
+                    <td>item3</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="foot">
+                <pre><code>&lt;table class=&quot;table table-border table-striped table-hover&quot;&gt;
+  ......
+&lt;/table&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+          <!-- conent end -->
+        </article>
+        <!-- table system end -->
+
+        <!-- from system start -->
+        <article id="form" class="doc-section">
+          <h2 class="bottm-line">表单 Form</h2>
+          <div class="doc-preface">
+            <p>一些常用的表单组合、单独的控件。</p>
+          </div>
+          <div class="conent">
+            <div class="doc-example" data-title="实例：">
+              <p>更新中......</p>
+              <div class="foot">
+                <pre><code>......</code></pre>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- from system end -->
+
+        <!-- content typeset system -->
+        <article id="typeset" class="doc-section">
+          <h2 class="bottm-line">排版</h2>
+          <div class="doc-preface">
+            <p>赋予一些常用标签的样式。</p>
+          </div>
+          <div class="conent">
+            <h3 id="title">标题 H</h3>
+            <div class="doc-preface">
+              <p>定义了&lt;h1&gt;~&lt;h6&gt;的标签基本样式，还提供了.h1~.h6的类元素样式。可为其他文本提供标题样式。</p>
+            </div>
+            <div class="doc-example" data-title="实例：">
+              <h1>Hello,你好，我是 H1</h1>
+              <h2>Hello,你好，我是 H2</h2>
+              <h3>Hello,你好，我是 H3</h3>
+              <h4>Hello,你好，我是 H4</h4>
+              <h5>Hello,你好，我是 H5</h5>
+              <h6>Hello,你好，我是 H6</h6>
+              <div class="foot">
+                <pre><code>&lt;h1&gt;Hello,你好，我是 H1&lt;/h1&gt;
+&lt;h2&gt;Hello,你好，我是 H2&lt;/h2&gt;
+&lt;h3&gt;Hello,你好，我是 H3&lt;/h3&gt;
+&lt;h4&gt;Hello,你好，我是 H4&lt;/h4&gt;
+&lt;h5&gt;Hello,你好，我是 H5&lt;/h5&gt;
+&lt;h6&gt;Hello,你好，我是 H6&lt;/h6&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>小标题</h3>
+            <div class="doc-preface">
+              <p>在标题内使用&lt;small&gt;标签或 .small类元素，可以用来标记小标题。</p>
+            </div>
+            <div class="doc-example" data-title="实例：">
+              <h1>Hello,你好，我是 H1，<small>我是副标题噢</small></h1>
+              <h2>Hello,你好，我是 H2，<small>我是副标题噢</small></h2>
+              <h3>Hello,你好，我是 H3，<small>我是副标题噢</small></h3>
+              <h4>Hello,你好，我是 H4，<span class="small">我是副标题噢</span></h4>
+              <h5>Hello,你好，我是 H5，<span class="small">我是副标题噢</span></h5>
+              <h6>Hello,你好，我是 H6，<span class="small">我是副标题噢</span></h6>
+              <div class="foot">
+                <pre><code>&lt;h1&gt;Hello,你好，我是 H1，&lt;small&gt;我是副标题噢&lt;/small&gt;&lt;/h1&gt;
+&lt;h2&gt;Hello,你好，我是 H2，&lt;small&gt;我是副标题噢&lt;/small&gt;&lt;/h2&gt;
+&lt;h3&gt;Hello,你好，我是 H3，&lt;small&gt;我是副标题噢&lt;/small&gt;&lt;/h3&gt;
+&lt;h4&gt;Hello,你好，我是 H4，&lt;span class="small"&gt;我是副标题噢&lt;/span&gt;&lt;/h4&gt;
+&lt;h5&gt;Hello,你好，我是 H5，&lt;span class="small"&gt;我是副标题噢&lt;/span&gt;&lt;/h5&gt;
+&lt;h6&gt;Hello,你好，我是 H6，&lt;span class="small"&gt;我是副标题噢&lt;/span&gt;&lt;/h6&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3 id="blockquote">引用 Blockquote</h3>
+            <div class="doc-preface">
+              <p>在文档中标记引用其他来源的内容。使用&lt;blockquote&gt;标签即可显示为引用样式，对于引用的正文，建议使用&lt;p&gt;标签。</p>
+              <p>对于来源出处则使用&lt;cite&gt;标签置于&lt;blockquote&gt;标签内。</p>
+            </div>
+            <div class="doc-example" data-title="实例：">
+              <blockquote class="doc-blockquote" cite="《霍乱时期的爱情》">
+                <p>趁年轻，好好利用这个机会，尽力去尝遍所有痛苦，这种事可不是一辈子什么时候都会遇到的。</p>
+                <cite>加夫列尔·加西亚·马尔克斯《霍乱时期的爱情》</cite>
+              </blockquote>
+              <blockquote class="doc-blockquote" cite="《百年孤独》">
+                <p>What matters in life is not what happens to you but what you remember and how you remember it.</p>
+                <cite>加夫列尔·加西亚·马尔克斯《百年孤独》</cite>
+              </blockquote>
+              <div class="foot">
+                <pre><code>&lt;blockquote class="doc-blockquote" cite="......"&gt;
+  &lt;p&gt;......&lt;/p&gt;
+  &lt;cite&gt;......&lt;/cite&gt;
+&lt;/blockquote&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3 id="list">列表 OL/UL</h3>
+            <div class="doc-preface">
+              <p>列表分为有序列表和无序列表，对列表的改动并不大，只是增加了一些类元素来让列表具有多种显示的方式。</p>
+              <p>对于来源出处则使用&lt;cite&gt;标签置于&lt;blockquote&gt;标签内。</p>
+            </div>
+            <div class="doc-example" data-title="实例：">
+              <p>有序列表和无序列表</p>
+              <ol class="inline-block">
+                <li>item 1</li>
+                <li>item 2
+                  <ol>
+                    <li>children itme 1</li>
+                    <li>children itme 2</li>
+                  </ol>
+                </li>
+                <li>item 3</li>
+              </ol>
+              <ul class="inline-block">
+                <li>item 1</li>
+                <li>
+                  item 2
+                  <ul>
+                    <li>children itme 1</li>
+                    <li>children itme 2</li>
+                  </ul>
+                </li>
+                <li>item 3</li>
+              </ul>
+              <ul class="inline-block unstyle mag20-lr">
+                <li>item 1</li>
+                <li>
+                  item 2
+                  <ul>
+                    <li>children itme 1</li>
+                    <li>children itme 2</li>
+                  </ul>
+                </li>
+                <li>item 3</li>
+              </ul>
+              <div class="foot">
+                <pre><code>&lt;ol&gt;
+  &lt;li&gt;&lt;/li&gt;
+  ......
+&lt;/ol&gt;</code>
+                        <code>&lt;ul&gt;
+  &lt;li&gt;&lt;/li&gt;
+  ......
+&lt;/ul&gt;</code>
+                        <code>&lt;ul class=&quot;unstyle&quot;&gt;
+  &lt;li&gt;&lt;/li&gt;
+  ......
+&lt;/ul&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3 id="text">文本对齐 Text</h3>
+            <div class="doc-preface">
+              <p>将文本对齐方式设置成一个类元素，是为了快速方便的处理文字对齐方式。</p>
+            </div>
+            <div class="doc-example" data-title="实例：">
+              <p class="text-nowrap">《默如时光》</p>
+              <p class="text-left">时光如匆匆流水。 </p>
+              <p class="text-center">波澜不惊，却自有力量。</p>
+              <p class="text-right">带走了青春，留下了年华。</p>
+              <p class="text-right">—— 林小帅</p>
+              <div class="foot">
+                <pre><code>&lt;p class=&quot;text-nowrap&quot;&gt;不换行&lt;/p&gt;
+&lt;p class=&quot;text-left&quot;&gt;文字左对齐&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;文字水平居中&lt;/p&gt;
+&lt;p class=&quot;text-right&quot;&gt;文字右对齐&lt;/p&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>文本垂直对齐 Vertical</h3>
+            <div class="doc-preface">
+              <p>* 这是一个比较特殊的对齐方式，可以让内容垂直对齐，但是此举非常危险，可能会破坏盒子模型，请慎用。</p>
+            </div>
+            <div class="grid-row doc-refer">
+              <div class="grid-col-1"> 参考：</div>
+              <div class="grid-col-11">
+                <span>张鑫旭：</span>
+                <a href="http://www.zhangxinxu.com/wordpress/2010/05/%E6%88%91%E5%AF%B9css-vertical-align%E7%9A%84%E4%B8%80%E4%BA%9B%E7%90%86%E8%A7%A3%E4%B8%8E%E8%AE%A4%E8%AF%86%EF%BC%88%E4%B8%80%EF%BC%89/">我对CSS vertical-align的一些理解与认识</a>
+              </div>
+            </div>
+            <div class="doc-example" data-title="实例：">
+              <blockquote class="doc-blockquote" cite="《追风筝的人》">
+                <p><span class="tbox text-vertical-top"></span>(top 对齐) 时间很贪婪。有时候，它会独自吞噬所有的细节。</p>
+                <p><span class="tbox text-vertical-middle"></span>(middle 对齐) 得到了再失去，总是比从来就没有得到更伤人。</p>
+                <p><span class="tbox text-vertical-bottom"></span>(bottom 对齐) 世间太多故事，其实都没有胜者。</p>
+                <cite>卡勒德·胡赛尼《追风筝的人》</cite>
+              </blockquote>
+              <div class="foot">
+                <pre><code>&lt;span class=&quot;text-vertical-top&quot;&gt;top&lt;/span&gt;
+&lt;span class=&quot;text-vertical-middle&quot;&gt;middle&lt;/span&gt;
+&lt;span class=&quot;text-vertical-bottom&quot;&gt;bottom&lt;/span&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3>文本书写方式 Writing</h3>
+            <div class="doc-preface">
+              <p>* 一个比较特殊的文字排版方式，可以让内容如古文一般从上到下书写，需要浏览器支持。</p>
+            </div>
+            <div class="doc-example" data-title="实例：">
+              <p>从左边起，从右边起</p>
+              <div class="writing-mode-lr inline-block">
+                <h3>《麦田守望者》</h3>
+                <p>—— 罗姆·大卫·塞林格</p>
+                <p>我是说孩子们都在狂奔，</p>
+                <p>也不知道自己是在往哪儿跑，</p>
+                <p>我得从什么地方出来，把他们捉住。</p>
+                <p>我整天就干这样的事。</p>
+                <p>我只想当个麦田的守望者。</p>
+                <p>我知道这有点异想天开，</p>
+                <p>可我真正喜欢干的就是这个。</p>
+              </div>
+              <div class="writing-mode-rl inline-block margin-left-l40">
+                <h3>《远方》</h3>
+                <p>—— 林小帅</p>
+                <p>期待一个有理想充满挑战的机遇。</p>
+                <p>让我们一起前行。</p>
+                <p>我想做梦，因为我还有梦想。</p>
+                <p>从我的小城市出发。</p>
+                <p>去一个， 去一个期盼已久的地方， </p>
+                <p>感受它的温度，就如老友一般；</p>
+                <p>去一个未曾相见的地方， 感受它的风情， </p>
+                <p>与它相谈甚欢。</p>
+                <p>去轻抚高山， 感受它的巍峨与壮丽； </p>
+                <p>去拥抱大海， 感受它粼粼波涛和深邃的胸怀。 </p>
+              </div>
+              <div class="foot">
+                <pre><code>&lt;div class=&quot;writing-mode-rl&quot;&gt;
+  ......
+&lt;/div&gt;</code><code>&lt;div class=&quot;writing-mode-rl&quot;&gt;
+  ......
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- content typeset end -->
+
+        <!-- button style start -->
+        <article id="button" class="doc-section">
+          <h2 class="bottm-line">按钮 Button</h2>
+          <div class="doc-preface">
+            <p></p>
+          </div>
+          <div class="conent">
+            <h3>基础样式</h3>
+            <div class="doc-preface">
+              <p>可呈现出作为按钮使用的&lt;button&gt;、&lt;input&gt;、&lt;a&gt;标签或者.button类元素。</p>
+            </div>
+            <div class="doc-example" data-title="实例：">
+              <button class="button">Button</button>
+              <input class="button" type="button" value="Input">
+              <input class="button" type="submit" value="Bubmit">
+              <a class="button" href="javascript:;">link</a>
+              <div class="foot">
+                <pre><code>&lt;button class=&quot;button&quot;&gt;Button&lt;/button&gt;
+&lt;input class=&quot;button&quot; type=&quot;button&quot; value=&quot;Input&quot;&gt;
+&lt;input class=&quot;button&quot; type=&quot;button&quot; value=&quot;Submit&quot;&gt;
+&lt;a class=&quot;button&quot; href=&quot;javascript:;&quot;&gt;Link&lt;/a&gt;</code></pre>
+              </div>
+            </div>
+
+          </div>
+        </article>
+        <!-- button style end -->
+
+        <!-- input style start -->
+        <article id="input" class="doc-section">
+          <h2 class="bottm-line">输入框 Input</h2>
+          <div class="conent">
+            <h3>基础样式</h3>
+            <div class="doc-preface">
+              <p>
+                让&lt;input&gt;赋予.input类元素可呈现出作为基本输入框样式使用。 再配合.validate类元素以及type、require属性可以触发带验证效果的输入框。
+              </p>
+            </div>
+            <div class="doc-example" data-title="实例：">
+              <p class="exp_gtitle">基础样式</p>
+              <p>
+                <input class="input" type="text" value="Input css text">
+                <input class="input" type="text" placeholder="focus me">
+              </p>
+              <p class="exp_gtitle">带验证样式</p>
+              <p>
+                <input class="input validate" type="email" value="email@amail.com" required>
+                <input class="input validate" type="url" value="Input url" required>
+              </p>
+              <div class="foot">
+                <pre><code>&lt;input class=&quot;input&quot; type=&quot;text&quot;&gt;
+&lt;input class=&quot;input validate&quot; type=&quot;type&quot; required&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- input style start -->
+
+        <article id="assist" class="doc-section">
+          <h2 class="bottm-line">辅助类样式</h2>
+          <div class="conent">
+            <h3>预定义场景色 button</h3>
+            <div class="doc-preface">
+              <p>使用以下类元素快速得到一个预定义按钮样式。</p>
+            </div>
+            <div class="doc-example" data-title="实例：">
+              <p>
+                <button class="button primary">primary button</button>
+                <button class="button success">success button</button>
+                <button class="button danger">danger button</button>
+              </p>
+              <p>
+                <input class="button primary" type="button" value="primary Input">
+                <input class="button success" type="button" value="success Input">
+                <input class="button danger" type="button" value="danger Input">
+              </p>
+              <p>
+                <a class="button primary" href="javascript:;">primary Link</a>
+                <a class="button success" href="javascript:;">success Link</a>
+                <a class="button danger" href="javascript:;">danger Link</a>
+              </p>
+              <div class="foot">
+                <pre><code></code></pre>
+              </div>
+            </div>
+
+            <h3>预定义场景色 background</h3>
+            <div class="doc-preface">
+              <p>使用以下类元素快速得到一个拥有预定义背景色的样式。</p>
+            </div>
+            <div class="doc-example" data-title="实例：">
+              <p class="primary">primary</p>
+              <p class="success">success</p>
+              <p class="danger">danger</p>
+              <div class="foot">
+                <pre><code></code></pre>
+              </div>
+            </div>
+
+            <h3>预定义文字颜色 background</h3>
+            <div class="doc-preface">
+              <p>使用以下类元素快速得到一个拥有预定义文字颜色的样式。</p>
+            </div>
+            <div class="doc-example" data-title="实例：">
+              <p class="text-primary">text-primary</p>
+              <p class="text-success">text-primary</p>
+              <p class="text-danger">text-primary</p>
+              <div class="foot">
+                <pre><code></code></pre>
+              </div>
+            </div>
+
+            <h3 id="disabled">禁用/激活样式</h3>
+            <div class="doc-preface">
+              <p>使用.disabled类元素或者为元素添加disabled会让元素呈现出不可用状态，一般多使用在&lt;button&gt;、&lt;input&gt;元素上。</p>
+              <p>反之，使用.active类元素可让元素从不可用状态转变为可用状态。添加了disabled属性的元素需要先消除该属性。</p>
+            </div>
+            <div class="doc-example" data-title="实例：">
+              <p class="exp_gtitle">Button disabled:</p>
+              <p>
+                <button class="button disabled" type="button">Button</button>
+                <input class="button disabled" type="button" value="Input">
+                <a class="button disabled" href="javascript:;">Link</a>
+              </p>
+              <p class="exp_gtitle">input disabled:</p>
+              <p>
+                <input class="input disabled" type="text" value="this is disabled!">
+                <input class="input validate disabled" type="email" value="email@amail.com" required>
+              </p>
+              <div class="foot">
+                <pre><code>&lt;button class=&quot;button disabled&quot; type=&quot;button&quot;&gt;&lt;/button&gt;
+&lt;input class=&quot;input disabled&quot; type=&quot;text&quot; value=&quot;&quot;&gt;</code></pre>
+              </div>
+            </div>
+
+            <h3 id="badge">徽章</h3>
+            <div class="doc-preface">
+              <p>徽章，也可用叫热点标记，通过.badge类元素让其赋予热点标记的状态。同样可以使用预定义样式来让其在不同的场景显示不同的状态。</p>
+              <p>* 使用了:empty伪类样式，可以通过text value是否为空来控制显示或者隐藏，无需控制。</p>
+            </div>
+            <div class="doc-example" data-title="实例：">
+              <p>
+                联系人<span class="badge">5</span>
+              </p>
+
+              <p>
+                联系人<span class="badge"></span>隐藏
+              </p>
+              <p>
+                <span class="tpr">联系人<span class="badge badge-float badge-primary">9</span></span>
+              </p>
+              <div class="foot">
+                <pre><code>&lt;p&gt;text&lt;span class=&quot;badge&quot;&gt;5&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;text&lt;span class=&quot;badge&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;text&lt;span class=&quot;badge badge-float badge-primary&quot;&gt;5&lt;/span&gt;&lt;/p&gt;</code></pre>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- about last start -->
+        <article id="last" class="doc-section">
+          <h2 class="bottm-line">写在最后</h2>
+          <div class="conent">
+            <p>以上这些整理都是来自工作中，或者个人项目中碰到的可重用的部分，写了无数次的样式。 </p>
+            <p>可能您细看会发现这里有<a href="#bootstrap">@Bootstrap</a>的影子，是的没错。关于一些样式的实现方案，确实是实现得比较优雅的，这无可厚非。</p>
+            <p>后续我也会把移动端适配的样式也更新进来，不过应该不会整合在一起，个人考虑还是独立一个mobile.min.css来进行移动端的适配。</p>
+            <p>多种风格的皮肤样式，应该会在mobile之前完成，因为皮肤结构是否易于修改，也正好检验了我对CSS结构的理解，让我更好的看见自己的不足。</p>
+            <p>最后还是要感谢一些人和团队，还有在前端群里的小伙伴们。他们让我学习到很多。</p>
+            <ul class="list-inline unstyle thx-list">
+              <li><a href="https://www.chengrang.com/">练小习</a></li>
+              <li><a href="https://isux.tencent.com/">ISUX</a></li>
+              <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Reference">Mozilla CSS</a></li>
+              <li><a id="bootstrap" href="http://www.bootcss.com/">Bootstrap</a></li>
+            </ul>
+          </div>
+        </article>
+        <!-- about last end-->
+
+      </div>
+      <!-- content grid end -->
+    </div>
+    <!-- grid end -->
+  </section>
+  <!-- main end -->
+  <footer class="footer">
+    <div class="copyright-info text-center">
+      <p>Designed and developed by Lin.xs.</p>
+      <p>Copyright © 2016 Lin.xs. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

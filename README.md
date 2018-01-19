@@ -1,10 +1,8 @@
-linxsbox.github.io
-===
-#
+# linxsbox.github.io
+
+## Siet Map
 
 ## UI
-
-[https://linxsbox.github.io](https://linxsbox.github.io)
 - 以上这些整理都是来自工作中，或者个人项目中碰到的可重用的部分，写了无数次的样式。 
 - 可能您细看会发现这里有 **@Bootstrap** 的影子，是的没错。关于一些样式的实现方案，确实是实现得比较优雅的，这无可厚非。
 - 后续我也会把移动端适配的样式也更新进来，不过应该不会整合在一起，个人考虑还是独立一个 **mobile** 来进行移动端的适配。
@@ -12,3 +10,4 @@ linxsbox.github.io
 - 最后还是要感谢一些人和团队，还有在前端群里的小伙伴们。他们让我学习到很多。
 
 ## JS
+- 后续更新
